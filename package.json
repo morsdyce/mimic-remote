@@ -1,0 +1,31 @@
+{
+  "name": "bdsm-remote",
+  "version": "1.0.0",
+  "description": "Remote debugger for BDSM",
+  "main": "index",
+  "bin": {
+    "bdsm-remote": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bdsm",
+    "mocks",
+    "remote",
+    "debugger"
+  ],
+  "author": "Maayan Glikser <maayan@glikm.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bdsm": "^1.0.3",
+    "commander": "^2.9.0",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "react-native-socketio": "^0.3.0",
+    "sc-cluster-broker-client": "^1.0.2",
+    "socket.io": "^1.5.1",
+    "socketcluster": "^5.0.18",
+    "websocket": "^1.0.23"
+  }
+}
