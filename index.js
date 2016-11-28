@@ -18,3 +18,8 @@ new SocketCluster({
   workerController: __dirname + '/worker.js',
   rebootWorkerOnCrash: true
 });
+
+setTimeout(() => {
+  console.log(`Started server at http://localhost:${port}`);
+}, 500);
+
