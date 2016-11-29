@@ -1,6 +1,6 @@
 {
   "name": "bdsm-remote",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Remote debugger for BDSM",
   "main": "index",
   "bin": {
@@ -17,7 +17,7 @@
   ],
   "author": "Maayan Glikser <maayan@glikm.com>",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "bdsm": "1.0.4-beta.6",
     "compression": "1.6.2",
     "express": "4.14.0",
