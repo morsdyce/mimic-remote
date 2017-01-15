@@ -10,22 +10,14 @@ module.exports.run = function (worker) {
   var scServer = worker.scServer;
 
   app.use(serveStatic(path.resolve(__dirname, 'static')));
-  app.use(serveStatic(path.resolve(__dirname, 'node_modules', 'bdsm', 'dist')));
+  app.use(serveStatic(path.resolve(__dirname, 'node_modules', 'mimic', 'dist')));
 
   httpServer.on('request', app);
 
-  /*
-   In here we handle our incoming realtime connections and listen for events.
-   */
   scServer.on('connection', function (socket) {
 
-    // Some sample logic to show how to handle client events,
-    // replace this with your own logic
-
-    socket.on('bdsm-message', (message) => {
-      // console.log('bdsm-message', message.type);
-
-      scServer.exchange.publish('bdsm-message', message);
+    socket.on('mimic-message', (message) => {
+      scServer.exchange.publish('mimic-message', message);
     });
 
   });

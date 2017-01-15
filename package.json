@@ -1,10 +1,10 @@
 {
-  "name": "bdsm-remote",
+  "name": "mimic-remote",
   "version": "0.0.2",
-  "description": "Remote debugger for BDSM",
+  "description": "Remote debugger for Mimic",
   "main": "index",
   "bin": {
-    "bdsm-remote": "./index.js"
+    "mimic-remote": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,9 +18,9 @@
   "author": "Maayan Glikser <maayan@glikm.com>",
   "license": "MIT",
   "dependencies": {
-    "bdsm": "1.0.4-beta.6",
     "compression": "1.6.2",
     "express": "4.14.0",
+    "mimic": "1.1.1",
     "react-native-socketio": "0.3.0",
     "sc-cluster-broker-client": "1.0.2",
     "socketcluster": "5.0.18"
