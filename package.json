@@ -1,6 +1,6 @@
 {
   "name": "mimic-remote",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Remote debugger for Mimic",
   "main": "index",
   "bin": {
@@ -20,7 +20,7 @@
   "dependencies": {
     "compression": "1.6.2",
     "express": "4.14.0",
-    "mimic": "1.1.1",
+    "mimic": "1.1.2",
     "react-native-socketio": "0.3.0",
     "sc-cluster-broker-client": "1.0.2",
     "socketcluster": "5.0.18"

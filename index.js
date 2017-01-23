@@ -14,7 +14,7 @@ new SocketCluster({
   workers: 1,
   brokers: 0,
   port,
-  appName: 'bdsm',
+  appName: 'mimic',
   wsEngine: 'uws',
   workerController: __dirname + '/worker.js',
   rebootWorkerOnCrash: true
