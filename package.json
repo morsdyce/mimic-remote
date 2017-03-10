@@ -1,6 +1,6 @@
 {
   "name": "mimic-remote",
-  "version": "0.0.4",
+  "version": "2.0.0-alpha.8",
   "description": "Remote debugger for Mimic",
   "main": "index",
   "bin": {
