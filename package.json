@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "compression": "1.6.2",
-    "express": "4.15.2",
+    "express": "4.15.3",
     "mimic": "1.1.2",
     "react-native-socketio": "0.3.0",
     "sc-cluster-broker-client": "1.0.2",
