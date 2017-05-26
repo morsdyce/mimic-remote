@@ -9,8 +9,13 @@ module.exports.run = function (worker) {
   var httpServer = worker.httpServer;
   var scServer = worker.scServer;
 
-  app.use(serveStatic(path.resolve(__dirname, 'static')));
+  app.set('view engine', 'ejs');
   app.use(serveStatic(path.resolve(__dirname, 'node_modules', 'mimic', 'dist')));
+
+  app.get('/', function(req, res) {
+    const indexPath = path.resolve(__dirname, 'views', 'index');
+    res.render(indexPath, { port: worker.options.port });
+  });
 
   httpServer.on('request', app);
 
