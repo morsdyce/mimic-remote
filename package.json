@@ -1,6 +1,6 @@
 {
   "name": "mimic-remote",
-  "version": "0.0.4",
+  "version": "2.0.2",
   "description": "Remote debugger for Mimic",
   "main": "index",
   "bin": {
@@ -18,9 +18,11 @@
   "author": "Maayan Glikser <maayan@glikm.com>",
   "license": "MIT",
   "dependencies": {
-    "compression": "1.6.2",
+    "compression": "1.7.0",
+    "ejs": "2.5.6",
     "express": "4.15.3",
-    "mimic": "1.1.2",
+    "mimic": "2.0.2-beta.6",
+    "compression": "1.7.0",
     "react-native-socketio": "0.3.0",
     "sc-cluster-broker-client": "1.0.2",
     "serve-static": "^1.11.2",
