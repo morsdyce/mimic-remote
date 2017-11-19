@@ -24,7 +24,7 @@
     "mimic": "2.0.2-beta.6",
     "react-native-socketio": "0.3.0",
     "sc-cluster-broker-client": "1.0.5",
-    "serve-static": "1.11.2",
+    "serve-static": "1.13.0",
     "socketcluster": "9.1.3"
   }
 }
