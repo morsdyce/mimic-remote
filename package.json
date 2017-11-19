@@ -18,11 +18,10 @@
   "author": "Maayan Glikser <maayan@glikm.com>",
   "license": "MIT",
   "dependencies": {
-    "compression": "1.7.0",
+    "compression": "1.7.1",
     "ejs": "2.5.6",
-    "express": "4.15.3",
+    "express": "4.16.0",
     "mimic": "2.0.2-beta.6",
-    "compression": "1.7.0",
     "react-native-socketio": "0.3.0",
     "sc-cluster-broker-client": "1.0.2",
     "serve-static": "^1.11.2",
