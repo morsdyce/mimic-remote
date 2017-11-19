@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 
-const SocketCluster = require('socketcluster').SocketCluster;
-
+const SocketCluster = require('socketcluster');
 const args = process.argv.slice(2);
 let port = 5000;
 
