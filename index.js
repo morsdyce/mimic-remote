@@ -1,25 +1,16 @@
-#!/usr/bin/env node
-"use strict";
-
 const SocketCluster = require('socketcluster');
-const args = process.argv.slice(2);
-let port = 5000;
+const path = require('path');
 
-if (args[1] && args[0] === '-p' || args[0] === '--port') {
-  port = parseInt(args[1]);
+function listen(port = 5000) {
+  new SocketCluster({
+    workers: 1,
+    brokers: 0,
+    port,
+    appName: 'mimic',
+    wsEngine: 'ws',
+    workerController: path.join(__dirname, 'worker.js'),
+    rebootWorkerOnCrash: true
+  });
 }
 
-new SocketCluster({
-  workers: 1,
-  brokers: 0,
-  port,
-  appName: 'mimic',
-  wsEngine: 'ws',
-  workerController: __dirname + '/worker.js',
-  rebootWorkerOnCrash: true
-});
-
-setTimeout(() => {
-  console.log(`Started server at http://localhost:${port}`);
-}, 500);
-
+module.exports = listen;

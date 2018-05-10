@@ -4,7 +4,7 @@
   "description": "Remote debugger for Mimic",
   "main": "index",
   "bin": {
-    "mimic-remote": "./index.js"
+    "mimic-remote": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,13 +18,13 @@
   "author": "Maayan Glikser <maayan@glikm.com>",
   "license": "MIT",
   "dependencies": {
-    "compression": "1.7.1",
-    "ejs": "2.5.6",
-    "express": "4.16.0",
-    "mimic": "2.0.2-beta.6",
+    "compression": "1.7.2",
+    "ejs": "2.6.1",
+    "express": "4.16.3",
+    "mimic": "2.0.3",
     "react-native-socketio": "0.3.0",
     "sc-cluster-broker-client": "1.0.5",
-    "serve-static": "1.13.0",
-    "socketcluster": "9.1.3"
+    "serve-static": "1.13.2",
+    "socketcluster": "13.0.1"
   }
 }
