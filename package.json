@@ -7,7 +7,9 @@
     "mimic-remote": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "bdsm",
@@ -25,6 +27,8 @@
     "react-native-socketio": "0.3.0",
     "sc-cluster-broker-client": "1.0.5",
     "serve-static": "1.13.0",
-    "socketcluster": "9.1.3"
-  }
+    "socketcluster": "9.1.3",
+    "snyk": "^1.316.2"
+  },
+  "snyk": true
 }
